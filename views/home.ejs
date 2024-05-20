@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        tr:hover{
+            background-color: black;
+            color: white;
+            
+        }
+        table:hover{
+            box-shadow: 15px 15px 15px;
+            transition: all 1s linear;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100vw;
+            height: 10vh;
+            background-color: #4B9EC5;
+            padding-left: 15%;
+            padding-right: 10%;       
+        }
+
+
+
+        .div2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            
+        }
+        a{
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: white;
+            
+        }
+        h1{
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: 1.5rem;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+           font-family: "Briem Hand", cursive;
+           font-optical-sizing: auto;
+           font-weight: 5;
+           font-style: normal;
+        }
+        .form{
+            text-align: center;
+            margin-top: 7vw;
+            width: 50vw;
+            height: 10vh;
+          
+            margin: auto;
+            margin-top: 4vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* gap: 5px; */
+            
+           
+        }
+        .cardd{
+         
+            margin-top: 50px;
+            height: 40vh;
+            width: 95%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            
+           
+
+        }
+
+        input{
+            font-size: 1rem; 
+            width: 80%;
+            height:7.4vh;
+            padding: 1.5rem;  
+           
+            
+        }
+        button{
+      
+            height: 7.4vh;
+            /* padding: 15px;   */
+            width: 90px;
+            background-color: #4B9EC5;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:1rem;
+            color: white;
+           
+        }
+
+    
+        table{
+            width: 50%;
+           margin: auto;
+           margin-left: 24rem;
+           margin-top: 20PX;
+        }
+  h2{
+    font-size: 1.5rem;
+  }
+      
+       .textt{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        
+
+       } 
+       .card2{
+        margin:auto;
+        padding-bottom: 1vw;
+       }
+       
+       .button{
+       
+        width: 180px;
+        height: 40px;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 18px;
+       
+       }
+       .button a{
+        color: black;
+       
+       }
+       .button:hover{
+        background-color: #4B9EC5;
+        
+       }
+   .main{
+ 
+    margin: auto;
+    
+   
+
+   }
+   .paragraph{
+   
+    width: 50rem;
+    margin: auto;
+   
+
+   }
+   .card{
+    width: 50rem;
+    box-shadow: 2px 2px 5px;
+   }
+   .card1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+   }
+   .box{
+    box-sizing: border-box;
+    width: 400px;
+   }
+   .main2{
+    width: 100vw;
+    margin: auto;
+ 
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .div3{
+   width:20rem;
+   
+    text-align: center;
+    margin: 3px;
+   }
+   .div3 img{
+     width: 4rem;
+   }
+  
+   .icons{
+    width: 30vw;
+    height: 5vh;
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 43px;
+    margin: auto;
+    
+   
+   }
+   .footer img{
+      width: 30px;
+      
+      border-radius: 20px;
+    }
+    .footer{
+        width: 100vw;
+    }
+    
+   
+    </style>
+</head>
+<body>
+  
+    <div class="navbar">
+        <div class="div1"><i><a href="">Smart Urls</a></i></div>
+        <div class="div2 ">
+            <a href="/login">Login</a>
+            <a href="/signup">signup</a>
+            
+          
+     </div>
+    </div>
+
+    <% if(locals.id){%>
+        <p>Generated URL: http://localhost:8005/url/<%=id%></p> 
+    <%} %>
+<div class="main">
+  
+    <h1> URL shortner</h1>
+
+    <div class="container cardd"> 
+        <div class="row card-box border card">
+            <div class="col-12 col-md-12 col-lg-12">
+                <div class=" m-4 text-center">
+                    <h2>Paste the URL to be shortened</h2>
+             
+            
+                <form action="/url" method="post">
+                    <div class="textt">
+                        <input type="text" name="url" id="url" placeholder="Enter Your URL">
+                        <button type="submit">Submit</button>
+                    </div>
+                   
+                </form>
+              
+              
+                <p class="pt-4">ShortURL is a free tool to shorten URLs and generate short links</p>
+                <p>URL shortener allows to create a shortened link making it easy to share</p>
+            </div>
+              </div>
+
+       </div>
+    </div> 
+
+    
+    <div class="container cardd card2 "> 
+        <div class="row card-box border card">
+            <div class="col-12 col-md-12 col-lg-12 ">
+                <div class="m-4 text-center ">
+                    <h2>Want More? Try Premium Features!</h2>
+                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatbsmjs </p>
+                   <p>builder, QR codes, extension, app integrations and support</p>
+                    </p>
+                    <div class="button">
+                        <a href="/signup" class="">Create Account</a>
+
+                    </div>
+                    
+               </div>
+            </div>
+
+       </div>
+    </div> 
+  
+    <div class="container">
+        <div class="row">
+            <div class=" col-12 col-md-12 col-lg-4 paragraph mt-5">
+                <h2>Simple and fast URL shortener!</h2>
+                <p>ShortURL allows to shorten long links from Instagram, Facebook, YouTube, Twitter, Linked In, WhatsApp, TikTok, blogs and sites. Just paste the long URL and click the Shorten URL button. On the next page, copy the shortened URL and share it on sites, chat and emails. After shortening the URL, check how many clicks it received.</p>
+        
+            </div>
+            <div class=" col-12 col-md-12 col-lg-4 paragraph mt-5">
+                <h2>Shorten, share and track</h2>
+                <p>Your shortened URLs can be used in publications, documents, advertisements, blogs, forums, instant messages, and other locations. Track statistics for your business and projects by monitoring the number of hits from your URL with our click counter.</p>
+        
+            </div>
+                 
+        </div>
+    </div>
+   
+</div>
+
+<div class="main2 mt-5">
+    <div class="div3">
+        <img src="/pic/thumb_up_24dp_FILL0_wght400_GRAD0_opsz24 (1).png" alt="">
+        <h4>EASY</h4>
+        <p>ShortURL is easy and fast, enter the long
+        link to get your shortened link</p>
+    </div>
+    <div class="div3">
+        <img src="\pic\link_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
+        <h4>Shortened</h4>
+        <p>Use any link, no matter what size,
+            ShortURL always shortens</p>
+    </div>
+
+    <div class="div3">
+        <img src="\pic\security_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
+        <h4>Secure</h4>
+        <p>It is fast and secure, our service has
+            HTTPS protocol and data encryption</p>
+    </div>
+</div>
+<div class="main2">
+    <div class="div3">
+        <img src="\pic\analytics_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
+        <h4>Statistics</h4>
+        <p>ShortURL is easy and fast, enter the long
+        link to get your shortened link</p>
+    </div>
+    <div class="div3">
+        <img src="\pic\volunteer_activism_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
+        <h4>Reliable</h4>
+        <p>All links that try to disseminate spam,
+            viruses and malware are deleted</p>
+    </div>
+
+    <div class="div3">
+        <img src="\pic\devices_other_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="">
+        <h4>Devices</h4>
+        <p>Compatible with smartphones, tablet
+            and desktop</p>
+    </div>
+</div>
+
+
+<div class="footer bg-dark">
+    <div class="icons py-5">
+        <a href=""><img src="/pic/search.png" alt=""></a>
+        <a href=""><img src="/pic/facebook.png" alt=""></a>
+        <a href=""><img src="/pic/linkedin.png" alt=""></a>
+        <a href=""><img src="/pic/twitter.png" alt=""></a>
+        <a href=""><img src="/pic/instagram.png" alt=""></a>
+        <a href=""><img src="/pic/github (1).png" alt=""></a>
+
+
+    </div>
+    <p class="text-white text-center">
+        © 2024 Copyright: Smart Urls
+    </p>
+
+</div>
+
+</div>
+
+     
+<!-- </div class="tablee">
+    <%  if(locals.urls) {%>
+       
+        <table border="1px solid black">
+            <thead>
+                <th>s.no</th>
+                <th>shortId</th>
+                <th>redirect</th>
+                <th>clicks</th>
+            </thead>
+            <tbody>
+                <tr>
+                <% urls.forEach((url,index)=>{%>
+                <td><%=index+1%></td>
+                <td><%=url.shortid%></td>
+                <td><%=url.redirecturl%></td>
+                <td><%=url.vistedHistory.length%></td>
+            </tr>
+                
+                
+               <% })%>
+              
+            </tbody>
+        </table>
+        
+        
+    <%}%>
+     -->
+     
+</body>
+</html>

@@ -1,0 +1,58 @@
+.div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.bg{
+    /* background-image: url('/pic/geometric-gradient-futuristic-background_23-2149116406.avif'); */
+    background-size: cover;
+    background-color: #008B8B;
+    
+}
+
+.forum{
+     width: 30%;
+    height: 80vh;
+    border: 1px black solid;
+    border-radius: 15px;
+    background-color:white
+    /* background-color:transparent; */
+    /* background-image: url('/pic/geometric-gradient-futuristic-background_23-2149116406.avif'); */
+  
+    
+    /* background-size: cover; */
+
+}
+
+.forum:hover{
+    box-shadow: 5px 5px px rgb(83, 81, 81);
+    transition: all ease-in 1s;
+    
+}
+
+.divv{
+    width: 100;
+    height: 5vh;
+
+
+}
+button{
+    background-color: transparent;
+  
+  
+   
+}
+a{
+    text-decoration: none;
+    color: aquamarine;
+
+}
+.color{
+    color: black;
+}
+img{
+    size:0px;
+}
